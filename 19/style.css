@@ -1,0 +1,124 @@
+html,body{
+    width: 100%;
+    height: 100%;
+  
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figure{
+    position: relative;  
+   
+
+}
+figcaption{
+    background-color: black;
+    font-size: 1.3rem;
+    color: wheat;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding: 1rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+@media  (min-width:520px ) {
+ .row{
+    display: flex;
+    gap: 4%;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+  figure{
+    flex-basis: 22%;   
+}
+
+.span-1{
+    flex-basis: 48%;
+}
+.span2{
+    flex-basis: 48%;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.span3{
+    flex-basis: 48%;
+    height: 220px;
+}
+.span4{
+    flex-basis: 74%;
+}
+.order-1{
+    order: 2;
+}
+.order-2{
+    order: 3;
+}
+.order-3{
+    order: 2;
+}
+.span5{
+    flex-basis: 100%;
+}
+.span31{
+    flex-basis: 100%;
+    height: 200px;
+}
+}
+
+
+@media  (min-width:870px){
+    .row{
+        flex-wrap: nowrap;
+    }
+  
+.span2{
+    flex-basis: 48%;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.span3{
+    flex-basis: 48%;
+    height: 320px;
+}
+.span31{
+    flex-basis: 48%;
+}
+.span32{
+    flex-basis: 22%;
+}
+.span4{
+    flex-basis: 22%;
+}
+.order-1{
+    order: 4;
+    height: 300px;
+}
+.order-2{
+    order: 3;
+    height: 300px;
+}
+.order-3{
+    order: 2;
+    height: 300px;
+}
+}
+
+    
+
+
+
