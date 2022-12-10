@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+      .wrapper {
+        display: grid;
+        gap: 1%;
+      }
+      figure {
+        border: 10px solid black;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 500px;
+        justify-self: center;
+      }
+      figcaption {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+      }
+      figcaption h3 {
+        margin: 0.5rem;
+      }
+
+      .fig1 {
+        animation-name: fade;
+        animation-delay: 1s;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes fade {
+        0% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <figure class="fig1">
+        <img src="./10.jpg" alt="" />
+        <figcaption class="cap1">
+          <h3>Gallery-1</h3>
+        </figcaption>
+      </figure>
+      <figure class="fig2">
+        <img src="./11.jpg" alt="" />
+        <figcaption class="cap2">
+          <h3>gallery-2</h3>
+        </figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
