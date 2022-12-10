@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* HOLY GRAIL LAYOUT */
+        .wrapper{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 100px 3fr 70px;
+            grid-template-rows: 4rem 1fr 4rem;
+            grid-template-areas: "nav nav nav"
+            "aside1 main aside2"
+            "footer footer footer";
+        }
+        nav{
+            background-color: #100720;
+            grid-area: nav;
+        }
+        footer{
+            background-color: #100720;
+            grid-area: footer;
+        }
+        aside{
+            background-color: #FFCACA;
+
+        }
+        .aside-1{
+            grid-area: aside1;
+
+        }
+        .aside-2{
+            grid-area: aside2;
+        }
+        main{
+            background-color: #372948;
+            grid-area: main;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav></nav>
+        <aside class="aside-1"></aside>
+        <aside class="aside-2"></aside>
+        <main></main>
+        <footer></footer>
+    </div>
+</body>
+</html>
