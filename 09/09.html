@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #150050;
+        clip-path: polygon(
+          0% 0%,
+          0% 100%,
+          25% 100%,
+          25% 25%,
+          75% 25%,
+          75% 75%,
+          25% 75%,
+          25% 100%,
+          100% 100%,
+          100% 0%
+        );
+        border: solid #fb2576;
+        border-width: clamp(5px, 5vw, 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
