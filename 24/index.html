@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+/* 
+********
+always read from right to left to know which descendent selector is going to select 
+********** 
+ */
+
+        /* it will select all list items in ul */
+        ul li{
+            color: red; 
+        }
+
+        /* it will select all anchors in ul */
+        ul a{
+            color: red;
+        }
+        /* it will select all li items that are direct children of parent with class delhi */
+        .delhi > li{
+            color: green;
+        }
+
+        /* it will select siblings of li that is direct child of item with class delhi */
+        .delhi > li ~li {
+            color: gold;
+        }
+        /* further more depth to understand thios more */ 
+        ul ol > li ~ li a{
+            color: purple;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul class="country">
+     <li>india 
+        <li>delhi
+            <ol class="delhi">
+            <li><a href="#">west delhi</a></li>
+            <li><a href="#">east delhi</a></li>
+            <li><a href="#">north delhi</a></li>
+            <li><a href="#">south delhi</a></li>
+            </ol>
+     </li>
+    </li>
+    <li>punjab
+        <ol>
+            <li><a href="#">ludhiana</a></li>
+            <li><a href="#">amritsar</a></li>
+            <li><a href="#">patiala</a></li> 
+        </ol>
+    </li>
+    </ul>
+</body>
+</html>
