@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50%;
+            height: 200px;
+            margin: 3rem auto;
+            border: 30px solid black;
+            
+        }
+        .box1{
+border-image-source: url("https://images.unsplash.com/photo-1666782135903-e93ec1852aaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk2fGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+            border-image-slice:30 ;
+        }
+        .box2{
+            background-color: black;
+            border-image-source: linear-gradient(to right,#99f2c8,#1f4037);
+            border-image-slice: 40;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+</body>
+</html>
