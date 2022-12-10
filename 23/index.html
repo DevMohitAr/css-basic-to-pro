@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       ol,li{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+        ol{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            gap:1rem;
+            padding:1.5rem 3rem;
+            border-radius: 10px;
+            color: white;  
+        }
+        /* usw "window + ." on window and comd+ctrl+space on mac to get emoji */
+        ol li:first-child::marker{
+            content: '😄';
+        }
+        ol li:nth-of-type(2)::marker{
+            content: '😔';
+        }
+        ol li:nth-of-type(3)::marker{
+            content: '😡';
+        }
+        ol li:last-child::marker{
+            content: '🙄';
+        }
+        li{
+            text-transform: capitalize;
+            padding: 0.4rem;
+            font-size: 1.5rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <ol>
+        <li>happy</li>
+        <li>sad</li>
+        <li>angry</li>
+        <li>shocked</li>
+    </ol>
+</body>
+</html>
