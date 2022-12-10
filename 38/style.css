@@ -1,0 +1,150 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.container{
+    width: 90vw;
+    max-width: 200px;
+    border: 2px solid black;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: #101727;
+}
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.plan p:first-child{
+    font-size: .85rem;
+    font-weight: bold;
+    color: #a0ff47;
+}
+.plan-btn{
+    text-transform: capitalize;
+    padding: 6px 8px;
+    font-size: .575rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #A1FF46;
+    color: #2b4229;
+}
+.price{
+    display: grid;
+  grid-template-columns: min-content;
+  gap: 0.2rem;
+  align-items: end;
+   
+}
+.price h2{
+    grid-column: 1 ;
+    grid-row: 1 /span 2;
+    font-size: 2.5rem;
+    color: #fbfbfd;
+}
+
+.price p{
+    grid-column: 2;
+    font-size: 0.6rem;
+    color: #727984;
+}
+
+.price p:nth-of-type(1){
+align-self: end;
+}
+.price p:nth-of-type(2){
+align-self: start;
+}
+.container > p{
+    font-size: 0.6rem;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color:#9b9ea6;
+}
+.container > button{
+    display: block;
+    width: 100%;
+    padding: 6px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 8px;
+}
+.container button:nth-of-type(2){
+    margin-top: 0.5rem;
+    background-color: white;
+    color: #5d616d;
+}
+.btn1{
+    background-color: #a0ff47;
+    color: #41662b;
+}
+.card-details h3{
+    color: #e1e2e3
+}
+.card-details p{
+    color: #848d94;
+    text-transform: capitalize;
+}
+.card-details h3{
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    margin-top: 1rem;
+}
+.card-details p{
+    font-size: 0.5rem;
+    margin-top: 0.3rem;
+}
+ul{
+    margin-top: 1rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.bor{
+    width: 100%;
+    height: 2px;
+    background-color: #545d70;
+    margin-top: .92rem;
+
+}
+ul button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    color: #294029;
+    background-color:#a0ff47 ;
+    border: none;
+}
+.icon{
+    font-size: 0.5rem;
+}
+ul li{
+    display: flex;
+    gap:.5rem;
+    color: #9ca3aa;
+    font-size: 0.6rem;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    text-transform: capitalize;
+}
