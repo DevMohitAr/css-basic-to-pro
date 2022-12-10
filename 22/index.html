@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            max-width: 400px;
+            display: grid;
+            grid-template-columns: 2fr 3fr;  
+            border:1px solid rgb(34, 1, 1);
+            padding: 1rem;
+        }
+
+        dt{
+            grid-column: 1/2;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        dd{
+            grid-column: 2/3;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+        }
+        dd:first-of-type{
+            grid-row-start: 1;
+        }
+        div:nth-of-type(even){
+            background-color: #333;
+            color: white; 
+        }
+         div:nth-of-type(odd){
+            background-color: rgb(190, 188, 188);
+            color: rgb(21, 10, 10); 
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <div class="one">
+        <dt>australian team</dt>
+        <dd>warner</dd>
+        <dd>finch</dd>
+        <dd>maxwell</dd>
+        
+        </div>
+        <div class="two">
+            <dt>indian team</dt>
+            <dd>virat</dd>
+            <dd>rohit</dd>
+            <dd>rahul</dd>
+        </div>
+        <div class="three">
+            <dt>melbourne</dt>
+            <dt>sydney</dt>
+            <dt>perth</dt>
+            <dd>australia</dd>
+        </div>
+    </dl>
+</body>
+</html>
