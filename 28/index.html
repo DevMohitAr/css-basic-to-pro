@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+       header{
+        display: grid;
+         /* for layout one */
+        grid-template-columns: min-content auto ;
+         /* for layout one */
+         /* grid-template-columns: min-content 1fr 2fr ; */
+
+        grid-row: auto auto;
+        gap: 1rem 2rem;
+        margin-top: 1rem;
+      }
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        width: 120px;
+        
+      }
+     
+      a{
+            /* for layout one */
+            grid-row: 1/span 2;
+            /* for layout two */
+        margin-left: 10px;
+        
+      }
+    
+      h1{
+        align-self: center;
+        text-transform: capitalize;
+        font-size: 2.5rem;
+      }
+      ul{
+        list-style: none;
+        /* for layout one */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        grid-column: 2;
+     /* for layout two */
+        
+        /* display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; */
+        
+      }
+      li{
+        font-size: 1.3rem;
+        text-transform: capitalize;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7r3o0BmEaioomwOQJIV68mvW0dbF3EsZFw&usqp=CAU"
+          alt=""
+        />
+      </a>
+      <h1>web agency</h1>
+      <ul class="menu">
+        <li>home</li>
+        <li>about</li>
+        <li>service</li>
+        <li>contact</li>
+      </ul>
+    </header>
+  </body>
+</html>
