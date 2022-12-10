@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* em is compounding which means it behaves as per its parent element.In this example small btn parent size is 1rem which equals to 16px padding for all the buttons set to 1em 3em which means 
+        small button padding will be (16*0.4)*1,(16*3*0.4)*3
+        medium button padding will be (16*0.8)*1,(16*3*0.8)*3
+        large button padding will be (16*1.1)*1,(16*1.1.4)*3
+
+        so em sets its padding based on the font-size of the parent element , we need not to mention it separately */
+        .btn-box{
+            width: 90%;
+            margin: auto;
+            border: 4px solid hsl(234, 60%, 40%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+        }
+      .btn {
+        border: none;
+        background: hsl(234, 60%, 40%);
+        color: hsl(234, 57%, 97%);
+        padding: 1em 3em;
+        margin: 1rem;
+        text-transform: capitalize;
+      }
+      .btn-small{
+        font-size: 0.4rem;
+      }
+      .btn-medium{
+        font-size: 0.8rem;
+      }
+      .btn-large{
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn-box">
+      <button class="btn btn-small">small</button>
+      <button class="btn btn-medium">medium</button>
+      <button class="btn btn-large">large</button>
+    </div>
+  </body>
+</html>
