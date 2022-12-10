@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+      aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        width: 200px;
+
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        flex: 1;
+      }
+      aside{
+        display: none;
+      }
+      @media (min-width:820px){
+            aside{
+                display: revert;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside></aside>
+      <main><h1>main</h1></main>
+    </div>
+  </body>
+</html>
