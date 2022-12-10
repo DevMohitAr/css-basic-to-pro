@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        display: grid;
+        place-items: center;
+
+      }
+      div:nth-of-type(odd) {
+        background-color: #283618;
+        z-index: 2;
+        opacity: 0.5;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      div:nth-of-type(even) {
+        background-color: #606c38;
+        opacity: 0.5;
+        z-index: 1;
+      }
+      .wrapper {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-rows: repeat(4,auto);
+        gap: 1rem;
+        background-color: #fefae0;
+       
+        
+       
+      }
+      section {
+        grid-template-columns: repeat(8, 80px);
+        grid-template-rows: repeat(2,80px);
+      }
+      .sec1 {
+        grid-row: 1;
+        display: grid;
+        border-bottom: 3px solid #283618;
+        padding: 8px;
+      }
+      .sec2 {
+        
+        grid-row: 3;
+        display: grid;
+        border-top: 3px solid #283618;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .sec3 {
+        
+        grid-row: 4;
+        display: grid;
+        padding-top: 8px;
+        border-top: 3px solid #283618;
+      }
+      .sec4{
+        grid-row: 2;
+        text-align: right;
+        margin-right: 4rem;
+      }
+      .one{
+        grid-column: 4;
+      }
+      .two{
+        grid-column: 6;
+      }
+      .three{
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .four{
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .five{
+        grid-column: 3;
+      }
+      .six{
+        grid-column: 6;
+      }
+      .eight{
+        grid-column: 6;
+      }
+      p{
+    color:#bc6c25 ;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="wrapper">
+      <section class="sec1">
+        <div class="one"></div>
+        <div class="two"></div>
+      </section>
+      <section class="sec4">
+        <p>experiment</p>
+      </section>
+
+      <section class="sec2">
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+      </section>
+      <section class="sec3">
+        <div class="eight"></div>
+      </section>
+    </article>
+  </body>
+</html>
