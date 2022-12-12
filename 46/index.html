@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *,*::after,*::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            height: 250px;
+                clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+        }
+        .header{
+            display: grid;
+            width: 90%;
+            max-width: 400px;
+            margin: 2rem auto;
+            box-shadow: 0px 4px 8px rgba(235, 93, 89, 0.6);
+            
+        }
+        figure{
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            gap: 1rem;
+            background-color: #EB5D59;
+        }
+        .text-details{
+            grid-row: 2/3;
+            text-align: center;
+            background-color: #90001F;
+            padding: 1rem;
+            color: #FEFBFA;
+            border-top: 20px solid;
+             border-image-source: url("https://images.unsplash.com/photo-1541450805268-4822a3a774ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHJlZCUyMHBhdHRlcm5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+            border-image-slice: 90 40 ; 
+            
+            
+        }
+        img:nth-child(1){
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+        img:nth-child(2){
+            grid-column: 4/8;
+            grid-row: 1/2;
+        }
+        img:nth-child(3){
+            grid-column: 7/11;
+            grid-row: 1/2;
+        }
+        h1,p{
+            text-transform: capitalize;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="text-details">
+        <h1>unique styles</h1>
+        <p>best and unique products</p>
+      </div>
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1661768662059-4c4edfd09346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <img src="https://images.unsplash.com/photo-1657400041166-0a693dbdd8c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQwfFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1668614637218-0af5d72b3d07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc3fFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+      </figure>
+    </div>
+  </body>
+</html>
