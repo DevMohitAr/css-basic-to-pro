@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        background: url("https://images.unsplash.com/photo-1669666805169-03fadb8f6c43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0NXxpVUlzblZ0akIwWXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60");
+        display: grid;
+        place-content: center;
+        text-align: center;
+        color: #f5a19b;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        border: 10px solid hsla(0, 0%, 100%, 0.5);
+        background: white;
+        background-clip: padding-box;
+        padding: 16px;
+        display: grid;
+        place-content: center;
+      }
+      h2 {
+        text-transform: capitalize;
+        font-weight: 700;
+        color: #161830;
+      }
+      span{
+        color: #161830;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>background-clip</h2>
+      <p><span>background-clip:</span> padding-box;</p>
+    </div>
+  </body>
+</html>
