@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background-color: black;
+        }
+        img{
+            max-width: 100%;
+            display: block;
+            filter: sepia() saturate(4);
+            filter: sepia() saturate(4) hue-rotate(134deg);
+        }
+        .box{
+            width: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+</body>
+</html>
